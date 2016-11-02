@@ -6,6 +6,8 @@ def tolongid(short_id):
     Break any 15 character Salesforce ID into 3 5 character strings. Reverse the characters in each.
     Convert all uppercase alpha characters to 1. Convert any other character to 0.
     Find each result in the char lookup table. Appended each to the original ID.
+    Algorithm described here: \
+    http://salesforce.stackexchange.com/questions/27686/how-can-i-convert-a-15-char-id-value-into-an-18-char-id-value
     :return: an 18 character salesforce ID
     """
     if short_id == None:
