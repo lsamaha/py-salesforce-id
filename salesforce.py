@@ -12,7 +12,9 @@ def tolongid(short_id):
     """
     if short_id == None:
         return None
-    if len(short_id) != 15:
+    elif len(short_id) == 18:
+        return short_id
+    elif len(short_id) != 15:
         return None
     char_codes = {
         "00000":'A', "00001": 'B', "00010": 'C', "00011": 'D', "00100": 'E',
